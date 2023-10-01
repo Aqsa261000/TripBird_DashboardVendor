@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+}
+body {
+  max-width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-primary: rgb(0, 140, 255);
+  --color-primary-dark: rgb(3, 115, 207);
+  --color-red: rgb(255, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.fullcontainer {
+  display: grid;
+  grid-template-columns: 30rem repeat(4, 1fr);
+  grid-template-rows: 100vh;
+}
+.sidebar {
+  background: var(--color-primary);
+
+  padding-left: 3rem;
+}
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0 7rem 0;
+  color: var(--color-white);
+}
+.sidebar .logo img {
+  width: 7rem;
+  height: 6rem;
+}
+.sidebar .logo h1 {
+  font-size: 2.7rem;
+}
+.sidebar .dashboard {
+  background-color: var(--color-white);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.sidebar .dashboard a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.sidebar .dashboard i {
+  font-size: 1.8rem;
+  padding-right: 1.5rem;
+  color: var(--color-primary);
+}
+.sidebar ul li {
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5rem max-content;
+}
+.sidebar ul li a {
+  font-size: 1.6rem;
+  color: var(--color-white);
+}
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+.sidebar ul li i {
+  font-size: 1.7rem;
+
+  color: var(--color-white);
+}
