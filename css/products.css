@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-lightblack: rgb(55, 55, 55);
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-primary: rgb(0, 140, 255);
+  --color-primary-dark: rgb(3, 115, 207);
+  --color-primary-dark: rgb(0, 102, 185);
+  --color-red: rgb(255, 0, 0);
+  --color-darkred: rgb(229, 0, 0);
+  --color-grey: rgb(128, 128, 128);
+  --color-darkgrey: rgb(103, 103, 103);
+  --color-green: rgb(0, 128, 0);
+  --color-greendark: rgb(1, 102, 1);
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: 1rem;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+.table th {
+  text-align: center;
+}
+.table td {
+  text-align: center;
+}
+
+/* .table thead tr th:nth-child(7){
+    text-align: left;
+  } */
+/* .table tbody tr td:nth-child(7){
+    text-align: left;
+  } */
+
+.fullcontainer {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  grid-template-rows: 100vh;
+}
+
+.sidebar {
+  background: var(--color-primary);
+
+  padding-left: 3rem;
+}
+
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0 7rem 0;
+  color: var(--color-white);
+}
+
+.sidebar .logo img {
+  width: 7rem;
+  height: 6rem;
+}
+
+.sidebar .logo h1 {
+  font-size: 2.7rem;
+}
+
+.sidebar .dashboard {
+  background-color: var(--color-white);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.sidebar .dashboard a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.sidebar .dashboard i {
+  font-size: 1.8rem;
+  padding-right: 1.5rem;
+  color: var(--color-primary);
+}
+
+.sidebar ul li {
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5rem max-content;
+}
+
+.sidebar ul li a {
+  font-size: 1.6rem;
+  color: var(--color-white);
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar ul li i {
+  font-size: 1.7rem;
+
+  color: var(--color-white);
+}
+
+/* .products .table .thead{
+      border: none;
+      outline: none;
+    } */
+.products {
+  margin: 2rem 7rem;
+}
+.products .add {
+  text-align: right;
+  background-color: var(--color-white);
+  padding: 1rem 2rem;
+  border: none;
+}
+.products .add button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.products .add button:hover {
+  background-color: var(--color-darkgrey);
+}
+.products h1 {
+  text-align: center;
+  padding: 0 0 2rem 0;
+  font-weight: 700;
+}
+.table .thead tr th {
+  font-size: 1.4rem;
+  width: 2rem;
+  padding: 1.5rem 0;
+}
+
+.table tbody tr td {
+  font-size: 1.4rem;
+}
+
+.table tbody tr td .buttons {
+  display: grid;
+  row-gap: 1.2rem;
+}
+
+.table tbody tr td .buttons .approve {
+  border: none;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.table tbody tr td .buttons .approve:hover {
+  background-color: var(--color-greendark);
+}
+.table tbody tr td .buttons .reject {
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.table tbody tr td .buttons .reject:hover {
+  background-color: var(--color-darkred);
+}
+.table tbody tr td .buttons .edit {
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.table tbody tr td .buttons .edit:hover {
+  background-color: var(--color-primary-dark);
+}
+.table tbody tr td .buttons .delete {
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.table tbody tr td .buttons .delete:hover {
+  background-color: var(--color-darkred);
+}
+.table tbody tr td .buttons .disable {
+  border: none;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.table tbody tr td .buttons .disable:hover {
+  background-color: var(--color-darkgrey);
+}
+.products .images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-items: center;
+  padding: 2rem 0;
+}
+.products .images .luggageimage {
+  width: 4rem;
+  height: 8rem;
+}
+.products .images .jacketimage {
+  width: 5rem;
+  height: 8rem;
+}
+.products .images .jacketimage:nth-child(2) {
+  width: 7rem;
+  height: 8rem;
+}
+form {
+  padding: 2rem 5rem;
+}
+.modal-content h2 {
+  text-align: center;
+  padding: 5rem 0 0 0;
+  font-weight: 700;
+}
+.modal-content form .button {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.modal-content form button {
+  background-color: var(--color-white);
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.modal-content form label,
+.modal-content form input {
+  font-size: 1.4rem;
+  height: 4.2rem;
+}
+.modal-content form label {
+  font-weight: 600;
+}
