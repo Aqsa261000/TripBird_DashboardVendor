@@ -168,8 +168,20 @@ button:focus {
 
 .table tbody tr td {
   font-size: 1.4rem;
+  
 }
-
+.table2 tbody tr td:nth-child(3){
+  width: 12rem;
+}
+.table2 tbody tr td:nth-child(7){
+  width: 15rem;
+}
+.table2 tbody tr td:nth-child(8){
+  width: 8rem;
+}
+.table2 tbody tr td:nth-child(9){
+  width: 8rem;
+}
 .table tbody tr td .buttons {
   display: grid;
   row-gap: 1.2rem;
