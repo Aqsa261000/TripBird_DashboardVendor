@@ -267,6 +267,9 @@ form {
   font-weight: 600;
   margin-top: 1rem;
 }
+.modal-content form button:hover {
+  background-color: var(--color-primary-dark);
+}
 .modal-content form label,
 .modal-content form input {
   font-size: 1.4rem;
