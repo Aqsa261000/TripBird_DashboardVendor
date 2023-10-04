@@ -88,3 +88,70 @@ li {
 
   color: var(--color-white);
 }
+
+/* Login Page */
+.container {
+  margin: 10rem auto;
+  height: 60vh;
+  width: 25vw;
+  /* background-color: pink; */
+  box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.226);
+}
+.inside-container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3.5rem;
+}
+h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--color-primary);
+}
+.main-label {
+  font-size: 16px;
+  margin-top: 2rem;
+}
+.input-box {
+  padding: 0.5rem 0.5rem;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 25rem;
+  margin: 0.5rem 0;
+  color: var(--color-primary);
+  border-bottom: 1px rgba(0, 0, 0, 0.76) solid;
+}
+.forgot-remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+.checkbox {
+  margin-top: 0.5rem;
+}
+.remember {
+  margin-top: 0;
+  font-size: 12px;
+}
+button {
+  width: 100%;
+  margin-top: 3rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: white;
+  background-color: var(--color-primary);
+}
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
