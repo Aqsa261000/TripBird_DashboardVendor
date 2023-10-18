@@ -22,26 +22,27 @@
 <body>
   <div class="fullcontainer">
     <div class="sidebar">
-        <div class="sidebar-brand">
-          <div class="logo">
-            <img src="./assets/favicon.jpeg" alt="" />
-            <h1>TripBird</h1>
-          </div>
-          <p class="dashboard">
-            <i class="fa-solid fa-gauge"></i><a href="">Vendor Dashboard</a>
-          </p>
-          <ul>
-            <li><i class="fa-solid fa-user"></i><a href="/myprofile.html">My Profile</a></li>
-            <li><i class="fa-brands fa-shopify"></i><a href="/products.html">Products</a></li>
-            <li><i class="fa-solid fa-truck-fast"></i><a href="">Orders</a></li>
-            <li>
-              <i class="fa-solid fa-cart-flatbed"></i><a href="/inventory.html">Inventory</a>
-            </li>
-          </ul>
+      <div class="sidebar-brand">
+        <div class="logo">
+          <img src="./assets/favicon.jpeg" alt="" />
+          <h1>TripBird</h1>
         </div>
+        <p class="dashboard">
+          <i class="fa-solid fa-gauge"></i><a href="./vendordashboard.html">Vendor Dashboard</a>
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-user"></i><a href="/myprofile.html">My Profile</a></li>
+          <li><i class="fa-brands fa-shopify"></i><a href="/products.html">Products</a></li>
+          <li><i class="fa-solid fa-truck-fast"></i><a href="./vendor-order.html">Orders</a></li>
+          <li>
+            <i class="fa-solid fa-cart-flatbed"></i><a href="/inventory.html">Inventory</a>
+          </li>
+        </ul>
       </div>
+    </div>
     <div class="products">
-      <div class="add"><button class="add" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Order Product</button></div>
+      <div class="add"><button class="add" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Order
+          Product</button></div>
       <!-- Button trigger modal -->
 
 
@@ -55,8 +56,8 @@
           <div class="modal-content">
             <h2>Order Product</h1>
               <form>
-                
-                
+
+
                 <div class="form-group row">
                   <label for="brand" class="col-sm-2 col-form-label">Brand</label>
                   <div class="col-sm-10">
@@ -72,9 +73,10 @@
                 <div class="form-group row">
                   <label for="images" class="col-sm-2 col-form-label">Add Images</label>
                   <div class="col-sm-10">
-                    <input type="file" accept="image/*" onchange="handleFileSelect(event)" class="form-control" id="images" style="padding: 0px 0;" placeholder="Choose File" multiple="multiple" required>
+                    <input type="file" accept="image/*" onchange="handleFileSelect(event)" class="form-control"
+                      id="images" style="padding: 0px 0;" placeholder="Choose File" multiple="multiple" required>
                     <ul id="fileList"></ul>
-                  
+
                   </div>
                 </div>
                 <!-- <div class="form-group row">
@@ -87,27 +89,27 @@
                                           
                                     </div>
                                   </div> -->
-                
-                
+
+
                 <div class="form-group row">
-                    <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
-                    <div class="col-sm-10">
-                      <input type="number" class="form-control" id="quantity" placeholder="Quantity" required>
-                    </div>
+                  <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="quantity" placeholder="Quantity" required>
                   </div>
-                  <div class="form-group row">
-                    <label for="suppliername" class="col-sm-2 col-form-label">Supplier Name</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="suppliername" placeholder="Suplier Name" required>
-                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="suppliername" class="col-sm-2 col-form-label">Supplier Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="suppliername" placeholder="Suplier Name" required>
                   </div>
-                  <div class="form-group row">
-                    <label for="orderdate" class="col-sm-2 col-form-label">Order Date</label>
-                    <div class="col-sm-10">
-                      <input type="date" class="form-control" id="orderdate" placeholder="Order Date" required>
-                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="orderdate" class="col-sm-2 col-form-label">Order Date</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="orderdate" placeholder="Order Date" required>
                   </div>
-                  
+                </div>
+
                 <!-- <fieldset class="form-group">
                                   <div class="row">
                                     <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
@@ -156,13 +158,13 @@
         </div>
       </div>
 
-      
+
       <table class="table table1">
         <h1>Remaining Products</h1>
         <thead class="thead">
           <tr>
             <th scope="col">#</th>
-            
+
             <th scope="col">Product Brand</th>
             <th scope="col">Title</th>
             <th scope="col">Image</th>
@@ -170,32 +172,31 @@
             <th scope="col">Purchase Price</th>
 
             <th scope="col">Selling Price</th>
-                        
+
           </tr>
         </thead>
         <tbody>
           <tr>
             <td scope="row">1</td>
-            
+
             <td>Wrangler</td>
             <td>Wrangler BackPack</td>
-            <td class="images"><img class="jacketimage" src="./assets/backpack1.jpg" alt=""><img
-              class="luggageimage" src="./assets/backpack11.jpg" alt=""><img
-              class="jacketimage" src="./assets/backpack12.jpg" alt=""></td>
-            
+            <td class="images"><img class="jacketimage" src="./assets/backpack1.jpg" alt=""><img class="luggageimage"
+                src="./assets/backpack11.jpg" alt=""><img class="jacketimage" src="./assets/backpack12.jpg" alt=""></td>
+
             <td>10</td>
             <td>Rs. 7000</td>
             <td>Rs. 5000</td>
-            
+
           </tr>
           <tr>
             <td scope="row">2</td>
-            
+
             <td>Wrangler</td>
             <td>Wrangler Camp Chair</td>
-            <td class="images"><img class="jacketimage" src="./assets/camp1.jpg" alt=""><img
-              class="jacketimage" src="./assets/camp11.jpg" alt=""></td>
-            
+            <td class="images"><img class="jacketimage" src="./assets/camp1.jpg" alt=""><img class="jacketimage"
+                src="./assets/camp11.jpg" alt=""></td>
+
             <td>20</td>
             <td>Rs. 4000</td>
             <td>Rs. 2000</td>
@@ -218,8 +219,8 @@
             <th scope="col">Order Date</th>
             <th scope="col">Delivery Date</th>
             <th scope="col">Delivery Status</th>
-            
-                        
+
+
           </tr>
         </thead>
         <tbody>
@@ -228,46 +229,46 @@
             <td>Wrangler</td>
             <td>Wrangler Luggage</td>
             <td class="images">
-                <img class="luggageimage" src="./assets/luggage1.webp" alt="">
-                <img class="luggageimage" src="./assets/luggage11.jpg" alt="">
-                <img class="luggageimage" src="./assets/luggage12.jpg" alt="">
-                <img class="luggageimage" src="./assets/luggage13.jpg" alt="">
+              <img class="luggageimage" src="./assets/luggage1.webp" alt="">
+              <img class="luggageimage" src="./assets/luggage11.jpg" alt="">
+              <img class="luggageimage" src="./assets/luggage12.jpg" alt="">
+              <img class="luggageimage" src="./assets/luggage13.jpg" alt="">
             </td>
-            
+
             <td>500</td>
             <td>10</td>
             <td>Muhammad Rasheed</td>
             <td>07-05-2023</td>
             <td>10-05-2023</td>
-            
-            
+
+
             <td>Processing</td>
-            
-            
+
+
           </tr>
           <tr>
             <td scope="row">2</td>
             <td>Kenneth</td>
             <td>Kenneth Jacket</td>
-            <td class="images"><img class="jacketimage" src="./assets/apparels2.jpg" alt=""><img
-              class="jacketimage" src="./assets/apparels21.jpg" alt=""></td>
-            
+            <td class="images"><img class="jacketimage" src="./assets/apparels2.jpg" alt=""><img class="jacketimage"
+                src="./assets/apparels21.jpg" alt=""></td>
+
             <td>700</td>
             <td>11</td>
             <td>Muhammad Younus</td>
             <td>07-05-2023</td>
             <td>10-05-2023</td>
-            
-            
+
+
             <td>Out For Delivery</td>
-            
-            
+
+
           </tr>
 
         </tbody>
       </table>
 
-      
+
     </div>
 
   </div>
@@ -280,30 +281,30 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    <script>
-      function handleFileSelect(event) {
-          const fileList = document.getElementById('fileList');
-          
+  <script>
+    function handleFileSelect(event) {
+      const fileList = document.getElementById('fileList');
 
-          const files = event.target.files;
-          
-          for (let i = 0; i < files.length; i++) {
-              const file = files[i];
-              const listItem = document.createElement('li');
-              const image = document.createElement('img');
-              image.src = URL.createObjectURL(file);
-              image.style.width = "10%"; 
-              image.style.height = "20%"; 
-              
 
-              listItem.textContent = file.name;
-              listItem.appendChild(image);
-              fileList.appendChild(listItem);
+      const files = event.target.files;
 
-              // Clean up the URL created for the image to prevent memory leaks
-              URL.revokeObjectURL(file);
-          }
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const listItem = document.createElement('li');
+        const image = document.createElement('img');
+        image.src = URL.createObjectURL(file);
+        image.style.width = "10%";
+        image.style.height = "20%";
+
+
+        listItem.textContent = file.name;
+        listItem.appendChild(image);
+        fileList.appendChild(listItem);
+
+        // Clean up the URL created for the image to prevent memory leaks
+        URL.revokeObjectURL(file);
       }
+    }
   </script>
 </body>
 

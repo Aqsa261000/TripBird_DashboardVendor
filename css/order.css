@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+    overflow-x: hidden;
+  }
+  body {
+    max-width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  :root {
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --color-primary: rgb(0, 140, 255);
+    --color-primary-dark: rgb(3, 115, 207);
+    --color-red: rgb(255, 0, 0);
+    --color-grey: rgb(128, 128, 128);
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  .fullcontainer {
+    
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-template-rows: 100vh;
+  }
+  .sidebar {
+     background: var(--color-primary);
+        height: 100vh;
+    padding-left: 3rem;
+  }
+  .sidebar .logo {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    align-items: center;
+    justify-items: center;
+    margin: 2rem 0 7rem 0;
+    color: var(--color-white);
+  }
+  .sidebar .logo img {
+    width: 7rem;
+    height: 6rem;
+  }
+  .sidebar .logo h1 {
+    font-size: 2.7rem;
+  }
+  .sidebar .vendordashboard {
+    background-color: var(--color-white);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+  .sidebar .vendordashboard a {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+  .sidebar .vendordashboard i {
+    font-size: 1.8rem;
+    padding-right: 1.5rem;
+    color: var(--color-primary);
+  }
+  .sidebar ul li {
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5rem max-content;
+  }
+  .sidebar ul li a {
+    font-size: 1.6rem;
+    color: var(--color-white);
+  }
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  .sidebar ul li i {
+    font-size: 1.7rem;
+  
+    color: var(--color-white);
+  }
+  .order-history-heading{
+    color: var(--color-grey);
+    margin-bottom: 4rem;
+    padding-left: 1.5rem;
+    }
+    
+      .order-table {
+        margin-top: 5rem;
+        padding: 2rem;
+      }
+      
+      .tab-heading {
+        font-size: 1.5rem;
+      }
+      .star {
+        color: goldenrod;
+      }
+      tbody tr td {
+        font-size: 1.4rem;
+        color: var(--color-grey);
+      }
+      tbody tr th {
+        font-size: 1.4rem;
+      }
+      .btn-group{
+        gap: 1rem;
+        width: 30%;
+      }
+     

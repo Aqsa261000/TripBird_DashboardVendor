@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./assets/favicon.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/order.css" />
+    <title>Vendor Dashboard | Order</title>
+</head>
+
+<body>
+    <div class="fullcontainer">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo">
+                    <img src="./assets/favicon.jpeg" alt="" />
+                    <h1>TripBird</h1>
+                </div>
+                <p class="vendordashboard">
+                    <i class="fa-solid fa-gauge"></i><a href="./vendordashboard.html">Vendor Dashboard</a>
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-user"></i><a href="./myprofile.html">My Profile</a></li>
+                    <li>
+                        <i class="fa-brands fa-shopify"></i><a href="./products.html">Products</a>
+                    </li>
+                    <li><i class="fa-solid fa-truck-fast"></i><a href="./vendor-order.html">Orders</a></li>
+                    <li>
+                        <i class="fa-solid fa-cart-flatbed"></i><a href="/inventory.html">Inventory</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="order-table">
+            <h1 class="order-history-heading">Order History</h1>
+            <table class="table">
+                <thead>
+                    <tr class="first-row">
+                        <th class="tab-heading" scope="col">Order </th>
+                        <th class="tab-heading" scope="col">Person</th>
+                        <th class="tab-heading" scope="col">Product</th>
+                        <th class="tab-heading" scope="col">Category</th>
+                        <th class="tab-heading" scope="col">Payment</th>
+                        <th class="tab-heading" scope="col">Order Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ali Ahmed</td>
+                        <td>Wrangler Luggage</td>
+                        <td>Travel Gears</td>
+                        <td>5000/-</td>
+                        <td>Confirmed</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Sara Moiz</td>
+                        <td>Kenneth Jacket</td>
+                        <td>Adventure Gears</td>
+                        <td>2000/-</td>
+                        <td>Completed</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Ayesha Ameen</td>
+                        <td>Wrangler BackPack</td>
+                        <td>Travel Gears</td>
+                        <td>5000/-</td>
+                        <td>Cancelled</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Faiza Kashaf</td>
+                        <td>Wrangler Camp Chair</td>
+                        <td>Adventure Gears</td>
+                        <td>5000/-</td>
+                        <td>Confirmed</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Fahad Hussain</td>
+                        <td>Travel bottles</td>
+                        <td>Travel Gears</td>
+                        <td>2000/-</td>
+                        <td>Refunded</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Sana Tariq</td>
+                        <td>Wrangler Camp Chair</td>
+                        <td>Adventure Gears</td>
+                        <td>5000/-</td>
+                        <td>Completed</td>
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Ansari Ahmed</td>
+                        <td>Travel Bottles</td>
+                        <td>Travel Gears</td>
+                        <td>5000/-</td>
+                        <td>Confirmed</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Ansari Ahmed</td>
+                        <td>Travel Bottles</td>
+                        <td>Travel Gears</td>
+                        <td>5000/-</td>
+                        <td>Confirmed</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Ansari Ahmed</td>
+                        <td>Travel Bottles</td>
+                        <td>Travel Gears</td>
+                        <td>5000/-</td>
+                        <td>Confirmed</td>
+
+                        <td>
+                            <div class="btn-group danger" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <div class="btn-group succes" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+</body>
+
+</html>

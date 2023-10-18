@@ -28,23 +28,23 @@
           <h1>TripBird</h1>
         </div>
         <p class="dashboard">
-          <i class="fa-solid fa-gauge"></i><a href="">Vendor Dashboard</a>
+          <i class="fa-solid fa-gauge"></i><a href="./vendordashboard.html">Vendor Dashboard</a>
         </p>
         <ul>
           <li>
-            <i class="fa-solid fa-user"></i
-            ><a href="/myprofile.html">My Profile</a>
+            <i class="fa-solid fa-user"></i><a href="/myprofile.html">My Profile</a>
           </li>
           <li><i class="fa-brands fa-shopify"></i><a href="/products.html">Products</a></li>
-          <li><i class="fa-solid fa-truck-fast"></i><a href="">Orders</a></li>
+          <li><i class="fa-solid fa-truck-fast"></i><a href="./vendor-order.html">Orders</a></li>
           <li>
             <i class="fa-solid fa-cart-flatbed"></i><a href="/inventory.html">Inventory</a>
           </li>
         </ul>
-      </div>  
+      </div>
     </div>
     <div class="products">
-      <div class="add"><button class="add" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Edit Profile</button></div>
+      <div class="add"><button class="add" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Edit
+          Profile</button></div>
       <!-- Button trigger modal -->
 
 
@@ -164,51 +164,51 @@
         </div>
       </div>
 
-    
+
       <h1>My Profile</h1>
-        <div class="profile-info">
+      <div class="profile-info">
         <div class="profileimage"><img src="/assets/man 1.jpeg" alt=""></div>
         <div class="information">
-            <div class="username">
-                <label for="username">Username:</label>
-                <span>jasonsmith</span>
-            </div>
-            <div class="password">
-                <label for="username">Password:</label>
-                <span>*********</span>
-            </div>
-            <div class="email">
-                <label for="email">Email:</label>
-                <span>jasonsmith@gmail.com</span>
-            </div>
-            <div class="phone">
-                <label for="phone">Phone:</label>
-                <span>+62 6478774</span>
-            </div>
-            <div class="category">
-                <label for="category">Product Category:</label>
-                <span>Travel Gears</span>
-            </div>
-            <div class="subcategory">
-                <label for="sub-category">Product Sub-Category:</label>
-                <span>Luggage</span>
-            </div>
-            <div class="company">
-                <label for="company">Company Name:</label>
-                <span>jasonsmith</span>
-            </div>
-            <div class="acctitle">
-                <label for="acctitle">Account Title:</label>
-                <span>Jason Smith</span>
-            </div>
-            <div class="accnumber">
-                <label for="accnumber">Account Number:</label>
-                <span>676467855</span>
-            </div>
+          <div class="username">
+            <label for="username">Username:</label>
+            <span>jasonsmith</span>
+          </div>
+          <div class="password">
+            <label for="username">Password:</label>
+            <span>*********</span>
+          </div>
+          <div class="email">
+            <label for="email">Email:</label>
+            <span>jasonsmith@gmail.com</span>
+          </div>
+          <div class="phone">
+            <label for="phone">Phone:</label>
+            <span>+62 6478774</span>
+          </div>
+          <div class="category">
+            <label for="category">Product Category:</label>
+            <span>Travel Gears</span>
+          </div>
+          <div class="subcategory">
+            <label for="sub-category">Product Sub-Category:</label>
+            <span>Luggage</span>
+          </div>
+          <div class="company">
+            <label for="company">Company Name:</label>
+            <span>jasonsmith</span>
+          </div>
+          <div class="acctitle">
+            <label for="acctitle">Account Title:</label>
+            <span>Jason Smith</span>
+          </div>
+          <div class="accnumber">
+            <label for="accnumber">Account Number:</label>
+            <span>676467855</span>
+          </div>
         </div>
-        </div>
+      </div>
 
-        <!-- <thead class="thead">
+      <!-- <thead class="thead">
           <tr>
             <th scope="col">#</th>
             <th scope="col">Product Category</th>
@@ -430,7 +430,7 @@
         </tbody>
       </table> -->
 
-      
+
 
     </div>
 
@@ -444,30 +444,30 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    <script>
-      function handleFileSelect(event) {
-          const fileList = document.getElementById('fileList');
-          
+  <script>
+    function handleFileSelect(event) {
+      const fileList = document.getElementById('fileList');
 
-          const files = event.target.files;
-          
-          for (let i = 0; i < files.length; i++) {
-              const file = files[i];
-              const listItem = document.createElement('li');
-              const image = document.createElement('img');
-              image.src = URL.createObjectURL(file);
-              image.style.width = "10%"; 
-              image.style.height = "20%"; 
-              
 
-              listItem.textContent = file.name;
-              listItem.appendChild(image);
-              fileList.appendChild(listItem);
+      const files = event.target.files;
 
-              // Clean up the URL created for the image to prevent memory leaks
-              URL.revokeObjectURL(file);
-          }
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const listItem = document.createElement('li');
+        const image = document.createElement('img');
+        image.src = URL.createObjectURL(file);
+        image.style.width = "10%";
+        image.style.height = "20%";
+
+
+        listItem.textContent = file.name;
+        listItem.appendChild(image);
+        fileList.appendChild(listItem);
+
+        // Clean up the URL created for the image to prevent memory leaks
+        URL.revokeObjectURL(file);
       }
+    }
   </script>
 </body>
 
